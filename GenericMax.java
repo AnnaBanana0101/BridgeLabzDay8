@@ -30,4 +30,9 @@ public class GenericMax<T extends Comparable<T>>{
         Arrays.sort(values, Comparator.reverseOrder());
         return Optional.of(values[0]);
     }
+
+    public void printMax(T...values)
+    {
+        System.out.println("Max value:" + findMax(values));
+    }
 }

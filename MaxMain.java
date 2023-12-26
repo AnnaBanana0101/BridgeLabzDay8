@@ -38,8 +38,9 @@ public class MaxMain {
 
         GenericMax<Integer> genericIntMax = new GenericMax();
         //int max = genericIntMax.findMax();
-        Optional<Integer> max = genericIntMax.findMax(1,2,3,4,5);
-        System.out.println("Maximum: "+max);
+        //Optional<Integer> max = genericIntMax.findMax(1,2,3,4,5);
+        genericIntMax.printMax(1,2,3,4,5,6);
+        //System.out.println("Maximum: "+max);
         System.out.println("");
 
     }
