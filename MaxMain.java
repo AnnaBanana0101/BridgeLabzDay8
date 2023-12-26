@@ -15,9 +15,9 @@ public class MaxMain {
         System.out.println("c:");
         String c = sc.nextLine();
 
-        GenericMax genericMax = new GenericMax();
+        GenericMax genericMax = new GenericMax(a,b,c);
 
-        String maximum = genericMax.findMax(a, b, c);
+        String maximum = (String) genericMax.findMax();
 
         System.out.println("Maximum: "+maximum);
         System.out.println("");
@@ -34,7 +34,8 @@ public class MaxMain {
         System.out.println("c:");
         int z = sc.nextInt();
 
-        int max = genericMax.findMax(x, y, z);
+        GenericMax genericIntMax = new GenericMax(x, y, z);
+        int max = (int) genericIntMax.findMax();
 
         System.out.println("Maximum: "+max);
         System.out.println("");
