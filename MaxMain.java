@@ -15,11 +15,31 @@ public class MaxMain {
         System.out.println("c:");
         String c = sc.nextLine();
 
-        StringMax stringMax = new StringMax();
+        GenericMax genericMax = new GenericMax();
 
-        String maximum = stringMax.findMax(a, b, c);
+        String maximum = genericMax.findMax(a, b, c);
 
         System.out.println("Maximum: "+maximum);
+        System.out.println("");
+
+        System.out.println("Enter the three Integers: ");
+
+        System.out.println("a:");
+        //Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+
+        System.out.println("b:");
+        int y = sc.nextInt();
+
+        System.out.println("c:");
+        int z = sc.nextInt();
+
+        int max = genericMax.findMax(x, y, z);
+
+        System.out.println("Maximum: "+max);
+        System.out.println("");
+
+
 
     }
 }
