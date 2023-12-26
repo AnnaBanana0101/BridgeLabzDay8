@@ -3,21 +3,21 @@ import java.util.*;
 public class MaxMain {
     public static void main(String[] args) throws Exception {
 
-        System.out.println("Enter the three integers: ");
+        System.out.println("Enter the three decimals: ");
 
         System.out.println("a:");
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+        float a = sc.nextFloat();
 
         System.out.println("b:");
-        int b = sc.nextInt();
+        float b = sc.nextFloat();
 
         System.out.println("c:");
-        int c = sc.nextInt();
+        float c = sc.nextFloat();
 
-        IntegerMax intMax = new IntegerMax();
+        FloatMax floatMax = new FloatMax();
 
-        int maximum = intMax.findMax(a, b, c);
+        float maximum = floatMax.findMax(a, b, c);
 
         System.out.println("Maximum: "+maximum);
 
